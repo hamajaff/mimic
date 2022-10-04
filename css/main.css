@@ -120,7 +120,7 @@ a:hover {
 }
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "times new roman", Helvetica, serif;
 }
 
 .header-container {
@@ -128,6 +128,17 @@ body {
   background-image: url(/assets/negative-space-black-forest-dawn.jpg);
   background-size: cover;
   background-position-x: center;
+}
+
+.arrowed {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  color: white;
+  font-size: 2em;
+  position: absolute;
+  left: 50%;
+  top: 90%;
 }
 
 .header-text {
@@ -140,34 +151,6 @@ body {
   top: 50%;
   width: 100%;
   text-align: center;
-}
-
-.arrowed {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-}
-
-.arrow-5 {
-  /* more triangle */
-  position: relative;
-  height: 0px;
-  width: 0px;
-  border: 12px solid;
-  border-color: darkcyan darkcyan transparent transparent;
-  transform: rotate(45deg);
-}
-
-.arrow-5:before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  display: block;
-  height: 12px;
-  width: 16px;
-  background-color: darkcyan;
-  transform: rotate(-45deg) translate(2px, 1px);
 }
 
 h4,
