@@ -8,7 +8,7 @@
        <title>MimicPage</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
     
 </head>
 <body>
@@ -22,7 +22,7 @@
             <div class='menu-button'></div>
           </label>
             <ul class="menu">
-              <li><a href="home">Hem</a> </li>
+              <li><a href="#home">Hem</a> </li>
               <li><a href="#about">Om</a></li>
               <li><a href="#contact">Kontakt</a></li>
             </ul>
@@ -32,8 +32,8 @@
                 <p>A journey through time and sheep</p>
                 <p>To see how ...cotton ...is mage, made I mean...</p>
             </div>
-            <div class="arrowed">
-                <iconify-icon icon="fa-solid:arrow-alt-circle-down"></iconify-icon> 
+            <div class="arrow">
+                    <a href="#about"><iconify-icon icon="fa-solid:arrow-alt-circle-down" ></iconify-icon></a> 
             </div>
         </Header>
     
@@ -50,12 +50,12 @@
                     <div class="profile">
                         <h5>Rakib</h5>
                         <img src="/assets/profiles/Rakib_Square.png" alt="RakibsProfil">
-                        <h6><p class="qoute">”</p>Rakib är vår vassaste node-utveckalre och håller ständigt ett öga på nya tekniker</h6>
+                        <p class="profile__description"><i class="fa fa-quote-right profile__quote" aria-hidden="true"></i>Rakib är vår vassaste node-utveckalre och håller ständigt ett öga på nya tekniker</p>
                     </div>
                     <div class="profile">
                         <h5>Alexandra</h5>
                         <img src="/assets/profiles/Alexandra_Square.png" alt="AlexandrasProfil">
-                        <h6><p class="qoute">”</p>Alexandra håller reda på alla överallt och ser till att det flyter</h6>
+                        <p class="profile__description"><i class="fa fa-quote-right profile__quote" aria-hidden="true"></i>Alexandra håller reda på alla överallt och ser till att det flyter</p>
                     </div>
                 </section>
 
@@ -63,30 +63,35 @@
                     <div class="profile">
                         <h5>Lasse</h5>
                         <img src="/assets/profiles/NoPerson_Square.png" alt="LassesProfil">
-                        <h6><p class="qoute">”</p>Gör övriga saker... mestadels...</h6>
+                        <p class="profile__description">
+                            <i class="fa fa-quote-right profile__quote" aria-hidden="true"></i>Gör övriga saker... mestadels...</p>
                     </div>
                     <div class="profile">
                         <h5>Sebastian</h5>
                         <img src="/assets/profiles/Sebastian_Square.png" alt="SebastiansProfil">
-                        <h6><p class="qoute">”</p>En av våra utbildare som har stor erfarenhet av ganska många</h6>
+                        <p class="profile__description"><i class="fa fa-quote-right profile__quote" aria-hidden="true"></i>En av våra utbildare som har stor erfarenhet av ganska många saker</p>
                     </div>
                 </section>
+                <div class="top-arrow" >
+                    <a href="#contact"><iconify-icon icon="fa-solid:arrow-alt-circle-down" id="toparrow" ></iconify-icon></a> 
+                 </div>
             </div>
+           
     </main>
 
     <footer>
         <section id="contact">
             <div class="adress">
-                <ul>
+                <ul class="adress__visit">
                     <li>Tegel Consulting AB</li>
                     <li>Agatvägen 18</li>
                     <li>168 60 Bromma</li>
                 </ul>
-                <ul>
+                <ul class="adress__tel">
                     <li>info@tegleconsulting.se</li>
                     <li>070-123 456 78</li>
                 </ul>
-                <ul>
+                <ul class="adress__social">
                     <li><i style="font-size:24px" class="fa">&#xf16d;</i> Instagram</li>
                     <li><i style="font-size:24px" class="fa">&#xf099;</i> Twitter</li>
                     <li><i style="font-size:24px" class="fa">&#xf09a;</i> Facebook</li>

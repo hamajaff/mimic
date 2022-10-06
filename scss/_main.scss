@@ -1,0 +1,42 @@
+@use "variables" as var;
+@use "navbar";
+@use "header";
+@use "mixins" as mix;
+@use "resset";
+@use "scroll";
+@use "team";
+@use "footer";
+
+h4,
+h2,
+li,
+p {
+  color: var.$color-primary;
+  text-size-adjust: 1.6em;
+}
+
+section {
+  @include mix.display-property;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .profile {
+    width: 50%;
+  }
+
+  .adress {
+    display: flex;
+    flex-direction: row;
+
+    padding: 20px;
+    &__visit {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

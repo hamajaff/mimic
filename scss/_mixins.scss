@@ -1,0 +1,7 @@
+@mixin display-property {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}

@@ -1,0 +1,19 @@
+@use "variables" as var;
+@use "mixins" as mix;
+@use "resset";
+@use "scroll";
+.header-container {
+  height: 100vh;
+  background-image: url(/assets/negative-space-black-forest-dawn.jpg);
+  background-size: cover;
+  background-position-x: center;
+}
+
+.header-text {
+  @include mix.display-property;
+  position: absolute;
+  top: 45%;
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: center;
+}
